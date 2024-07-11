@@ -1,0 +1,237 @@
+ /* ------------------ CSS root style ---------------------- */
+ :root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+--bs-dark: #212529;
+--dark: #0c1023;
+  --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+
+
+body {
+  font-size: .875rem;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+/* --------- Resourses --------- */
+.table-heading{
+  font-weight: 300;
+  background-color: var(--dark);
+  padding: 1.0rem;
+  text-align: center;
+}
+.profile-image{
+  height: 350px !important;
+}
+.img-profile{
+  width: 70px !important;
+  height: 70px !important;
+  margin-left: 3px;
+  border-radius: 3px;
+}
+.img-profile-2{
+  width: 60px !important;
+  height: 60px !important;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+.img-profile-student{
+  width: 250px !important;
+  height: 180px !important;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+.img-profile-tutor{
+  width: 70px !important;
+  height: 70px !important;
+  border-radius: 50px;
+}
+.h2-profile{
+  font-size: 15px;
+  font-weight: bolder;
+  margin-left: 5px;
+}
+.online-icon{
+  margin-left: 5px;
+}
+.table-dark{
+  background-color: #0c1023 !important;
+}
+.btn-primary{
+	background-color: var(--dark) !important;
+}
+.form-signin {
+  width: 70%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.text-center{
+  text-align: center !important;
+}
+.dashboard-grid{
+  padding: 5rem;
+  background-color: var(--dark);
+  border-radius: .5rem;
+}
+.text-secondary{
+  color: var(--dark) !important;
+  font-size: 1.5rem;
+}
+/* --------------Navbar Logo Branding ---------------*/
+.dp-brand{
+	margin-left: 3.0rem;
+	font-weight: 700;
+	color: var(--bs-danger) !important;
+}
+.dp-brand-1{
+	font-weight: 700;
+}
+.bg-dark{
+  background-color: var(--dark) !important;
+}
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  /* rtl:raw:
+  right: 0;
+  */
+  bottom: 0;
+  /* rtl:remove */
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #fff;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #faf8f8;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  font-size: 1rem;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+ .card-image {
+	width: 4.5rem;
+	height: 4.5rem;
+	margin-right: 1.5rem;
+	margin-bottom: 0.25rem;
+	margin-left: 0;
+	border-radius: 50%;
+}
+.content-box{
+  border-radius: 5px;
+  width: 100%;
+  min-height: 50px;
+  padding: 50px;
+}
+.content-box-icon{
+  font-size: 1.2rem;
+  padding: 6px;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: var(--bs-light);
+}
+
+.content-box-text ,.content-box-number{
+  margin-bottom: 3px;
+  font-weight: bolder;
+  color: var(--bs-light);
+}
